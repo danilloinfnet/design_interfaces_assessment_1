@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_personal_informations">
+
+    <fragment
+        android:id="@+id/nav_personal_informations"
+        android:name="com.example.assessmentdesigninterfaces.ui.home.HomeFragment"
+        android:label="@string/menu_personal_informations"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.assessmentdesigninterfaces.ui.gallery.EducationFragment"
+        android:label="@string/menu_education"
+        tools:layout="@layout/fragment_education" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.assessmentdesigninterfaces.ui.slideshow.ProfessionalXPFragment"
+        android:label="@string/menu_professional_xp"
+        tools:layout="@layout/fragment_professional_xp" />
+    <fragment
+        android:id="@+id/nav_courses"
+        android:name="com.example.assessmentdesigninterfaces.ui.courses.FragmentCourses"
+        android:label="@string/menu_courses"
+        tools:layout="@layout/fragment_courses" />
+    <fragment
+        android:id="@+id/nav_publications"
+        android:name="com.example.assessmentdesigninterfaces.ui.publications.FragmentPublications"
+        android:label="@string/menu_publications"
+        tools:layout="@layout/fragment_publications_fragment" />
+</navigation>
